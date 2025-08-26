@@ -1,70 +1,87 @@
-# DAO Partner Guide
+## How Token Futarchy Works
 
-Welcome to the **DAO Partner Guide** for Futarchy Labs.
+### Motivation
 
-Our mission is to help DAOs make better decisions, raise tokenholder confidence, and create lasting value by using **Token Futarchy** — conditional spot markets on token price that reveal the expected impact of proposals before they are adopted.
+In 2024, MakerDAO rebranded to “Sky.” Within ten days, the token lost ~20% of its market value — over $500M.  
+Many believed the rebrand caused this collapse, but without a way to isolate its effect it was impossible to know for sure.  
 
-## Why Futarchy Matters for DAOs
+**Futarchy solves this.** By running *two parallel markets* — one where the rebrand happens, and one where it does not — the DAO could have seen the expected token price impact *before committing*.  
 
-DAO governance today often struggles with:
-- **Low confidence**: tokenholders can’t easily know if a proposal will help or harm.
-- **Concentrated voting**: a few whales often determine the outcome.
-- **Unclear signals**: even when markets react, it’s hard to tie moves to specific proposals.
+---
 
-Futarchy addresses this by:
-- Creating **YES/NO conditional markets** for each proposal.
-- Using price differences to show the **expected token price impact**.
-- Requiring proposals to “prove themselves” in markets before they move forward.
+### Prediction vs Futarchy Markets
 
-This transforms governance into a **value-driven process**: proposals only pass when the market predicts they will increase the token’s value.
+It helps to distinguish **prediction markets** from **futarchy markets**:
 
-## A Real Example
+- **Prediction market:** “What’s the probability event X will happen?”  
+- **Futarchy market:** “What will the token price be if we do X vs if we don’t?”  
 
-In 2024, MakerDAO rebranded as “Sky.” Within ten days, MKR/SKY tokens lost ~20% of market value (over $500M). Many blamed the rebrand, but it was impossible to know for sure — the timing could have been coincidence. Futarchy solves this: by comparing conditional prices *with vs without* the rebrand **beforehand**, MakerDAO could have quantified the expected impact and avoided a costly decision.
+Instead of betting on the chance of an outcome, futarchy isolates the *value impact of a decision*.
 
-## How Token Futarchy Works (Light Version)
+---
 
-- A proposal is introduced.
-- We create two conditional markets:
-  - **YES Pool**: token price if the proposal passes.
-  - **NO Pool**: token price if the proposal fails.
-- Traders buy/sell in these pools.
-- After a 7-day **decision window**, the system compares the average prices (TWAP).
-- If YES > NO by a threshold (default: 1%), the proposal is recommended.
+### Futarchy Evaluation
 
-This ensures proposals are judged by their *expected effect on value*.
+When a proposal is introduced, futarchy creates two conditional markets:
 
-<pre> ```mermaid flowchart LR A[Proposal Submitted] --> B[Conditional YES/NO Markets] B --> C[TWAP Window (7d)] C --> D{Threshold met?} D -->|Yes| E[DAO implements proposal] D -->|No| F[Proposal rejected] ``` </pre>
+- **YES Market** — trades the token price *if the proposal passes*.  
+- **NO Market** — trades the token price *if the proposal fails*.  
 
-## Levels of Adoption
+Traders buy and sell in these pools, revealing their beliefs about the impact.
 
-Futarchy can integrate at different levels, depending on how much autonomy a DAO wants:
+After a decision window (default 7 days), the DAO compares the two average prices (TWAP).  
+- If **YES > NO** by a threshold (default 1%), the proposal is recommended.
+- Otherwise, it is rejected.
 
-- **Level 0 — Milestone Futarchy**  
-  Markets track token impact of milestones (e.g., “Launch feature X by Q3”). Signals only.
+```mermaid
+flowchart LR
+  Y["YES price (TWAP)"] --> C{"YES > NO + Threshold?"}
+  N["NO price (TWAP)"]  --> C
+  C -- Yes --> R1["Recommendation: Approve"]
+  C -- No  --> R2["Recommendation: Reject"]
+```
 
-- **Level 1 — Advisory Futarchy**  
-  Proposals are evaluated in conditional markets. Results guide tokenholder votes, or act as a veto requirement.
+---
 
-- **Level 2 — Sponsored Futarchy**  
-  Outsiders (activists) can fund proposals. If markets approve, sponsors buy DAO tokens at a discount, bringing new capital and alignment.
+### Trader Perspective (Illustration)
 
-- **Level 3 — FAO (Futarchy Autonomous Optimizer)**  
-  A fully on-chain futarchy agent. Holds treasury, runs proposal auctions, executes changes automatically. Pure market-driven governance.
+Even if this guide is for DAOs, seeing how traders act makes it clear:
 
-## Benefits for DAOs
+- **Supporter’s trade:** *“I only want to invest if this proposal passes.”*  
+  → They buy into the YES Market.
 
-- **Higher tokenholder confidence**: decisions are backed by measurable, market-driven evidence.
-- **Funding inflow**: sponsored proposals bring new capital directly into the DAO.
-- **Legitimacy**: shows the community and outsiders that governance is guided by value creation, not politics.
-- **Scalability**: futarchy filters noise, ensuring attention goes to high-impact proposals.
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','primaryColor':'#eef6ff','primaryBorderColor':'#7aa2ff','lineColor':'#7aa2ff'}}}%%
+flowchart LR
+  A["Buy in YES market (conditional)"] --> B{"Proposal approved?"}
+  B -- Yes --> C["Redeem → tokens (investment executed)"]
+  B -- No  --> D["Refund → funds returned"]
+  classDef box fill:#f9f9ff,stroke:#7aa2ff,rx:6,ry:6;
+  class A,B,C,D box;
+```
 
-## Next Steps
+- **Opponent’s trade:** *“I want to sell my tokens if this proposal passes.”*  
+  → They sell into the YES Market (conditional exit).  
 
-- Start small with **Milestone Futarchy** to test signals.
-- Graduate to **Advisory Futarchy** for major proposals.
-- Explore **Sponsored Futarchy** to attract capital and ideas.
-- Long-term: experiment with **FAO modules** for autonomous optimization.
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','primaryColor':'#eef6ff','primaryBorderColor':'#7aa2ff','lineColor':'#7aa2ff'}}}%%
+flowchart LR
+  A["Sell in YES market (conditional)"] --> B{"Proposal approved?"}
+  B -- Yes --> C["Settle → stable (exit completed)"]
+  B -- No  --> D["Revert → keep tokens"]
+  classDef box fill:#f9f9ff,stroke:#7aa2ff,rx:6,ry:6;
+  class A,B,C,D box;
+```
 
-👉 See the [Appendices](../appendices/glossary.md) for terminology and technical details.
+These individual bets aggregate into a market price signal — the information the DAO cares about.
 
+---
+
+### Filtering Out Noise
+
+A common question: *“But token prices move for many reasons. How can we know it’s about the proposal?”*  
+
+Futarchy answers this by comparing **two parallel markets** — *with* vs *without* the proposal.  
+Because both markets are subject to the same external factors, the **difference between them isolates the causal impact of the decision itself**.
+
+(See the FAQ for more details on manipulation and noise.)
