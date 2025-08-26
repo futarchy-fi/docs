@@ -1,40 +1,44 @@
 # Futarchy Adoption Levels
 
-Futarchy can be adopted step by step. DAOs don’t need to jump straight to full autonomy — each level adds more integration and confidence.
+Futarchy can be adopted step by step. DAOs don’t need to jump straight to full autonomy — each level adds more integration and confidence.  
+**We recommend DAOs start with Advisory Futarchy (proposal evaluation) as the default entry point.**  
+Milestone markets can run in parallel as an optional complement.
 
 ---
 
-## Level 0 — Milestone Futarchy
-
-**What it is:**  
-Markets estimate the impact of specific milestones (e.g. “Launch Feature X by Q3”) on token price.
-
-**DAO role:**  
-- Provide liquidity for milestone markets.  
-- Use results as *signals only*.  
-
-**Benefits:**  
-- Easiest entry point, low governance friction.  
-- Quick way to test futarchy in practice.
-
----
-
-## Level 1 — Advisory Futarchy
+## Advisory Futarchy (Recommended First Step)
 
 **What it is:**  
 Every major proposal runs through futarchy evaluation (YES vs NO).  
-The outcome guides tokenholder voting.
+The outcome provides a **market-based recommendation** that guides tokenholder voting.
 
 **DAO role:**  
 - Seed liquidity in YES/NO markets.  
-- Display futarchy recommendations in Snapshot or on-chain UI.
+- Display futarchy recommendations in Snapshot or on-chain UI.  
 
 **Benefits:**  
 - Increases tokenholder confidence.  
-- Prevents harmful proposals from moving forward without strong evidence.  
+- Prevents harmful proposals from moving forward without evidence.  
+- Minimal disruption to existing governance process.
 
 **Risks:**  
-- Delegates may still choose to ignore futarchy advice (cultural adjustment needed).
+- Delegates may initially ignore futarchy advice (cultural adjustment needed).
+
+---
+
+## Milestone Futarchy (Optional Complement)
+
+**What it is:**  
+Markets estimate the impact of specific roadmap milestones (e.g. “Launch Feature X by Q3”) on token price.  
+Milestones provide *extra signals* to validate execution, but are not required to adopt futarchy.
+
+**DAO role:**  
+- Provide liquidity for milestone markets.  
+- Use results as additional advisory signals.  
+
+**Benefits:**  
+- Supplements proposal futarchy with roadmap accountability.  
+- Helps track whether execution is adding value.  
 
 ---
 
@@ -79,9 +83,9 @@ It executes futarchy-approved proposals automatically.
 
 ---
 
-## Which level should your DAO choose?
+## Which path should your DAO choose?
 
-- **New to futarchy?** Start with **Milestones** (Level 0).  
-- **Ready for proposals?** Add **Advisory Futarchy** (Level 1).  
-- **Want to attract outside capital?** Enable **Sponsored Futarchy** (Level 2).  
-- **Long-term visionaries?** Experiment with **FAO** (Level 3).
+- **Default entry point:** Advisory futarchy for proposals.  
+- **Optional supplement:** Milestone futarchy for roadmap accountability.  
+- **Expand later:** Sponsored futarchy to attract capital and ideas.  
+- **Long-term vision:** FAO for fully autonomous governance.
