@@ -85,3 +85,30 @@ Futarchy answers this by comparing **two parallel markets** — *with* vs *witho
 Because both markets are subject to the same external factors, the **difference between them isolates the causal impact of the decision itself**.
 
 (See the FAQ for more details on manipulation and noise.)
+
+---
+
+## Benefits for DAOs
+
+- **Confidence** — tokenholders see measurable market signals before committing to proposals.  
+- **Legitimacy** — decisions are backed by a credibly neutral process, giving even controversial outcomes a clear justification.  
+- **Aligned ownership** — futarchy shifts token ownership toward participants who believe in and support the DAO’s long-term direction.  
+- **New capital and ideas** — the Sponsored Proposals mechanism attracts outside sponsors who bring both funding and fresh proposals.  
+
+> **Note:** Futarchy Evaluation only produces a **recommendation**.  
+> The DAO chooses how to use it:
+> - **Advisory** — market signal informs governance  
+> - **Veto** — proposals must pass futarchy to move forward  
+> - **Autonomous (FAO)** — proposals are automatically executed if futarchy approves  
+
+---
+
+---
+
+## Learn More
+
+- [FAQ](./faq.md) — answers to common questions (manipulation, noise, liquidity, Snapshot).  
+- [Adoption Levels](./adoption-levels.md) — detailed guide to Milestone, Advisory, Sponsored, and FAO.  
+- [Integration Guide](./integration.md) — how to set up futarchy in your DAO (liquidity, oracles, timelines).  
+- [Sponsored Proposals](./sponsorship.md) — how sponsorship works, how DAOs attract capital, and how sponsors are rewarded.  
+
