@@ -34,6 +34,8 @@ In 2024, MakerDAO rebranded as “Sky.” Within ten days, MKR/SKY tokens lost ~
 
 This ensures proposals are judged by their *expected effect on value*.
 
+<pre> ```mermaid flowchart LR A[Proposal Submitted] --> B[Conditional YES/NO Markets] B --> C[TWAP Window (7d)] C --> D{Threshold met?} D -->|Yes| E[DAO implements proposal] D -->|No| F[Proposal rejected] ``` </pre>
+
 ## Levels of Adoption
 
 Futarchy can integrate at different levels, depending on how much autonomy a DAO wants:
