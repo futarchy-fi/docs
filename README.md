@@ -19,3 +19,4 @@ Prices reflect participants’ beliefs **at the time a decision is made**, rathe
 ## Reference
 
 - [Appendices](./appendices/index.md) — theory, limitations, FAQs
+- [Market Implementation](./market-implementation.md) — on-chain mechanics and conditional token design
