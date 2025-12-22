@@ -18,4 +18,4 @@ Prices reflect participants’ beliefs **at the time a decision is made**, rathe
 
 ## Reference
 
-- [Appendices](./appendices.md) — theory, limitations, FAQs
+- [Appendices](./appendices/index.md) — theory, limitations, FAQs
