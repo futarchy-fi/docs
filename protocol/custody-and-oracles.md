@@ -154,3 +154,18 @@ These contracts reuse Seer’s battle-tested design while adapting it to governa
 
 - Conditional Token Framework contracts:  
   https://github.com/gnosis/conditional-tokens-contracts
+
+  
+--- 
+
+## Navigation
+
+- ⬅️ **[Protocol Overview](./README.md)**  
+  Overview of the Futarchy Labs on-chain protocol architecture.
+
+- ➡️ **[Conditions and Outcomes](./conditions-and-outcomes.md)**  
+  How governance decisions are represented as resolvable conditions.
+
+- 🔁 **[Proposal Lifecycle](./proposal-lifecycle.md)**  
+  How custody and oracle resolution fit into the end-to-end proposal flow.
+
