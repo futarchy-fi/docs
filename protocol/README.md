@@ -42,6 +42,8 @@ Each of these components is documented in detail in the pages below.
 
 ## Documentation Map
 
+### Core Protocol Components
+
 - **[Custody and Oracles](./custody-and-oracles.md)**  
   Collateral custody, oracle requirements, Seer integration, reality.eth, and Kleros.
 
@@ -53,6 +55,16 @@ Each of these components is documented in detail in the pages below.
 
 - **[Liquidity Pools](./liquidity-pools.md)**  
   Market construction and trade execution mechanics.
+
+---
+
+### Protocol Flows and Operations
+
+- **[Proposal Lifecycle](./proposal-lifecycle.md)**  
+  The end-to-end protocol flow from proposal creation through resolution and settlement.
+
+- **[Liquidity Management](./liquidity-management.md)**  
+  How liquidity is provided and managed for futarchy markets, including current operational practices and planned mechanisms.
 
 ---
 
