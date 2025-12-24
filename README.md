@@ -14,9 +14,9 @@ Prices reflect participants’ beliefs **at the time a decision is made**, rathe
 
 - [How Futarchy Works](./how-futarchy-works.md) — the core idea and mechanism
 - [Trading in Futarchy Markets](./trading-in-futarchy.md) — how conditional trades and payoffs work
+- [Futarchy Protocol](./protocol/) — on-chain mechanics and conditional token design
 - [Using Futarchy in Practice](./using-futarchy-in-practice.md) — how teams apply the signal in governance
 
 ## Reference
 
 - [Appendices](./appendices/index.md) — theory, limitations, FAQs
-- [Market Implementation](./market-implementation.md) — on-chain mechanics and conditional token design
