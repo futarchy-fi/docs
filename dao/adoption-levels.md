@@ -89,3 +89,19 @@ It executes futarchy-approved proposals automatically.
 - **Optional supplement:** Milestone futarchy for roadmap accountability.  
 - **Expand later:** Sponsored futarchy to attract capital and ideas.  
 - **Long-term vision:** FAO for fully autonomous governance.
+
+---
+
+## Navigation
+
+- ⬆️ **[DAO Operator Guides](./index.md)**  
+  Overview and quick links for DAO stakeholders.
+
+- ➡️ **[DAO Integration Guide](./integration.md)**  
+  How to set up liquidity, oracles, and governance hooks.
+
+- ➡️ **[Sponsored Proposals](./sponsorship.md)**  
+  Mechanics and incentives for sponsored futarchy.
+
+- ➡️ **[DAO FAQ](./faq.md)**  
+  Answers to common questions and concerns.

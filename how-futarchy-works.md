@@ -129,5 +129,4 @@ How the signal is used — advisory, binding, or otherwise — is up to each pro
   **[Using Futarchy in Practice](./using-futarchy-in-practice.md)**
 
 - Explore deeper theory and limitations:  
-  **[Appendices](./appendices.md)**
-
+  **[Appendices](./appendices/index.md)**

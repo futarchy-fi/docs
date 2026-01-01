@@ -4,3 +4,10 @@
 - **Metric Futarchy**: Futarchy based on external KPIs or metrics.
 - **Conditional Market**: A market that only pays out if a condition is met.
 - **YES/NO Tokens**: Split assets representing outcomes of proposals.
+
+---
+
+## Navigation
+
+- ⬅️ **[Appendices Home](./index.md)**
+- ⬆️ **[Futarchy Labs Docs](../README.md)**

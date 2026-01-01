@@ -112,3 +112,18 @@ Because both markets are subject to the same external factors, the **difference 
 - [Integration Guide](./integration.md) — how to set up futarchy in your DAO (liquidity, oracles, timelines).  
 - [Sponsored Proposals](./sponsorship.md) — how sponsorship works, how DAOs attract capital, and how sponsors are rewarded.  
 
+---
+
+## Navigation
+
+- ⬆️ **[Futarchy Labs Docs](../README.md)**  
+  Back to the main documentation home.
+
+- ➡️ **[Trader Onboarding](../traders/index.md)**  
+  Guidance for market participants in YES/NO pools.
+
+- ➡️ **[Activist Playbook](../activists/index.md)**  
+  How sponsors and activists can propose and influence roadmaps.
+
+- ➡️ **[DAO FAQ](./faq.md)**  
+  Answers to common governance and futarchy questions.
