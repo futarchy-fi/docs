@@ -97,8 +97,8 @@ The next section explains how these outcomes are used to construct conditional a
 
 ## Navigation
 
-- ⬅️ **[Market Implementation Overview](./README.md)**  
-  Return to the top-level market implementation documentation.
+- ⬅️ **[Protocol Overview](./README.md)**  
+  Return to the top-level protocol documentation.
 
 - ➡️ **[Conditional Assets](./conditional-assets.md)**  
   How unconditional assets are split into YES / NO claims and represented as ERC-20 tokens.

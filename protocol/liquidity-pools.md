@@ -126,11 +126,11 @@ Importantly:
 
 ## Navigation
 
-- ⬅️ **[Market Implementation Overview](./index.md)**  
-  Return to the top-level market implementation documentation.
+- ⬅️ **[Protocol Overview](./README.md)**  
+  Return to the top-level protocol documentation.
 
 - ⬅️ **[Conditional Assets](./conditional-assets.md)**  
   How conditional ERC-20 assets are created and redeemed.
 
-- ➡️ **[Proposal Lifecycle](../proposal-lifecycle.md)**  
+- ➡️ **[Proposal Lifecycle](./proposal-lifecycle.md)**  
   How proposals are created, markets are initialized, and outcomes are resolved.

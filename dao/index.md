@@ -112,3 +112,10 @@ Because both markets are subject to the same external factors, the **difference 
 - [Integration Guide](./integration.md) — how to set up futarchy in your DAO (liquidity, oracles, timelines).  
 - [Sponsored Proposals](./sponsorship.md) — how sponsorship works, how DAOs attract capital, and how sponsors are rewarded.  
 
+---
+
+## Navigation
+
+- ⬆️ **[Futarchy Labs Docs](../README.md)**
+- ➡️ **[Trader Onboarding](../traders/index.md)**
+- ➡️ **[Activist Playbook](../activists/index.md)**
