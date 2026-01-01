@@ -1,37 +1,72 @@
-## How Token Futarchy Works
+# DAO Operator Guide: How Token Futarchy Works
 
-### Motivation
+This page explains how DAOs use **token futarchy** to evaluate governance decisions using market signals.
 
-In 2024, MakerDAO rebranded to “Sky.” Within ten days, the token lost ~20% of its market value — over $500M.  
-Many believed the rebrand caused this collapse, but without a way to isolate its effect it was impossible to know for sure.  
+Futarchy does not replace governance by default. Instead, it provides **pre-decision, incentive-aligned signals** about the *expected value* of approving or rejecting a proposal. These signals are designed to inform — and over time, improve — governance decisions.
 
-**Futarchy solves this.** By running *two parallel markets* — one where the rebrand happens, and one where it does not — the DAO could have seen the expected token price impact *before committing*.  
-
----
-
-### Prediction vs Futarchy Markets
-
-It helps to distinguish **prediction markets** from **futarchy markets**:
-
-- **Prediction market:** “What’s the probability event X will happen?”  
-- **Futarchy market:** “What will the token price be if we do X vs if we don’t?”  
-
-Instead of betting on the chance of an outcome, futarchy isolates the *value impact of a decision*.
+This guide focuses on **how futarchy works conceptually**, how to interpret its outputs, and the **recommended default model** for DAOs.  
+Operational details (liquidity, oracles, thresholds, timelines) are covered in the Integration Guide.
 
 ---
 
-### Futarchy Evaluation
+## Motivation
 
-When a proposal is introduced, futarchy creates two conditional markets:
+Governance decisions are hard.
 
-- **YES Market** — trades the token price *if the proposal passes*.  
-- **NO Market** — trades the token price *if the proposal fails*.  
+Proposals often involve complex tradeoffs and uncertainty, and it is difficult to know in advance which actions will actually improve outcomes. Voting aggregates **preferences**, but it does not aggregate **beliefs about consequences** very well.
 
-Traders buy and sell in these pools, revealing their beliefs about the impact.
+In 2024, MakerDAO rebranded to “Sky.” Within ten days, the token lost roughly **20% of its market value** — over **$500M**.  
+Many believed the rebrand caused this collapse, but without a way to isolate its effect, it was impossible to know for sure.
 
-After a decision window (default 7 days), the DAO compares the two average prices (TWAP).  
-- If **YES > NO** by a threshold (default 1%), the proposal is recommended.
-- Otherwise, it is rejected.
+**Futarchy addresses this problem.**
+
+By running *two parallel markets* — one where a decision happens, and one where it does not — a DAO can observe the **expected token price impact of a proposal before committing to it**.
+
+Instead of guessing after the fact, futarchy makes expectations visible *in advance*.
+
+---
+
+## Prediction Markets vs. Futarchy Markets
+
+It is important to distinguish **prediction markets** from **futarchy markets**:
+
+- **Prediction market:**  
+  *“What is the probability that event X will happen?”*
+
+- **Futarchy market:**  
+  *“What will the token be worth if we do X versus if we don’t?”*
+
+Prediction markets estimate probabilities.  
+Futarchy markets compare **counterfactual worlds** and measure the **expected value impact of a decision**.
+
+The goal is not to predict outcomes, but to inform choices.
+
+---
+
+## Futarchy Evaluation (Default Model)
+
+When a proposal is evaluated using futarchy, two conditional markets are created:
+
+- **YES market** — trades the token price *if the proposal is approved*
+- **NO market** — trades the token price *if the proposal is rejected*
+
+Participants trade in these markets using real capital, expressing their beliefs about how the proposal would affect long-term value.
+
+During the evaluation window (default: **7 days**), prices evolve continuously.  
+At the end of the window, the DAO compares the **time-weighted average prices (TWAP)** of the two markets.
+
+### Default Recommendation Rule
+
+By default, Futarchy.FI recommends:
+
+- **Approve** if `YES > NO + threshold`
+- **Reject** otherwise
+
+- **Default threshold:** **1%**
+- **Scope:** global per DAO (can be raised for high-impact proposals)
+
+This rule is a **recommended default**, not a protocol requirement.  
+DAOs are encouraged to tune thresholds conservatively for sensitive decisions.
 
 ```mermaid
 flowchart LR
@@ -75,47 +110,95 @@ flowchart LR
 
 These individual bets aggregate into a market price signal — the information the DAO cares about.
 
----
+## Interpreting the Signal
 
-### Filtering Out Noise
+- **YES meaningfully above NO**  
+  → The market expects the proposal to *increase long-term value*.
 
-A common question: *“But token prices move for many reasons. How can we know it’s about the proposal?”*  
+- **NO above YES**  
+  → The market expects the proposal to be *value-destructive*.
 
-Futarchy answers this by comparing **two parallel markets** — *with* vs *without* the proposal.  
-Because both markets are subject to the same external factors, the **difference between them isolates the causal impact of the decision itself**.
+- **YES and NO very close**  
+  → The market is signaling **no measurable expected impact**.
 
-(See the FAQ for more details on manipulation and noise.)
+### Important: No Activity Is Still Information
 
----
+> **Thin or inactive markets are not a failure mode.**
 
-## Benefits for DAOs
+If prices remain close to the spot price with little trading, the correct interpretation is:
 
-- **Confidence** — tokenholders see measurable market signals before committing to proposals.  
-- **Legitimacy** — decisions are backed by a credibly neutral process, giving even controversial outcomes a clear justification.  
-- **Aligned ownership** — futarchy shifts token ownership toward participants who believe in and support the DAO’s long-term direction.  
-- **New capital and ideas** — the Sponsored Proposals mechanism attracts outside sponsors who bring both funding and fresh proposals.  
+> *“The proposal does not appear to materially affect value.”*
 
-> **Note:** Futarchy Evaluation only produces a **recommendation**.  
-> The DAO chooses how to use it:
-> - **Advisory** — market signal informs governance  
-> - **Veto** — proposals must pass futarchy to move forward  
-> - **Autonomous (FAO)** — proposals are automatically executed if futarchy approves  
+This is a valid and often useful signal, especially for low-impact or cosmetic changes.
 
 ---
+
+## Why Futarchy Works
+
+Futarchy works because it allows participants to express **beliefs conditionally**, rather than politically.
+
+- Traders risk capital only in the world they care about.
+- Informed participants profit by correcting mispricings.
+- Uninformed or manipulative trades are costly to sustain.
+
+Because positions are conditional, participants are incentivized to reveal **honest expectations** about value — not preferences, rhetoric, or social alignment.
+
+The result is a market-based estimate of expected value.
+
+---
+
+## Noise, Manipulation, and Market Quality
+
+Markets can always be influenced in the short term, but futarchy is designed so that:
+
+- Manipulation without information is **expensive**
+- Informed traders profit by trading against noise
+- **TWAP averaging** reduces last-minute price swings
+
+In practice, attempts at manipulation tend to transfer wealth from manipulators to informed traders, while improving price accuracy.
+
+See the DAO FAQ for deeper discussion.
+
+---
+
+## How DAOs Use Futarchy Outputs
+
+Futarchy.FI is **advisory by default**.
+
+Common governance patterns include:
+
+- **Advisory** — futarchy recommendations inform votes and deliberation
+- **Veto-gated** — proposals must pass futarchy to advance
+- **Autonomous (FAO)** — futarchy outcomes trigger execution automatically *(advanced; launching separately)*
+
+Most DAOs begin with **advisory futarchy**, build trust in the signal, and expand from there.
+
+---
+
+## Scope and Limits
+
+Futarchy:
+
+- does **not** execute proposals on its own (by default)
+- does **not** assess proposal intent, fairness, or political legitimacy
+- does **not** guarantee good outcomes
+
+Futarchy evaluates **expected value**, as reflected in market prices.  
+How strongly this signal is weighted alongside other governance considerations is a decision for each DAO.
 
 ---
 
 ## Learn More
 
-- [FAQ](./faq.md) — answers to common questions (manipulation, noise, liquidity, Snapshot).  
-- [Adoption Levels](./adoption-levels.md) — detailed guide to Milestone, Advisory, Sponsored, and FAO.  
-- [Integration Guide](./integration.md) — how to set up futarchy in your DAO (liquidity, oracles, timelines).  
-- [Sponsored Proposals](./sponsorship.md) — how sponsorship works, how DAOs attract capital, and how sponsors are rewarded.  
+- **[DAO FAQ](./faq.md)** — manipulation, noise, liquidity, oracle mechanics  
+- **[Adoption Levels](./adoption-levels.md)** — advisory, sponsored, and autonomous paths  
+- **[Integration Guide](./integration.md)** — liquidity, oracles, thresholds, timelines  
+- **[Sponsored Proposals](./sponsorship.md)** — attracting capital and ideas via sponsored futarchy  
 
 ---
 
 ## Navigation
 
-- ⬆️ **[Futarchy Labs Docs](../README.md)**
-- ➡️ **[Trader Onboarding](../traders/index.md)**
-- ➡️ **[Activist Playbook](../activists/index.md)**
+- ⬆️ **[Futarchy.FI Documentation](../README.md)**
+- ➡️ **[Trader Guides](../traders/index.md)**
+- ➡️ **[Activist Sponsors](../activists/index.md)**
