@@ -182,8 +182,8 @@ From this perspective, futarchy can be viewed as a governance layer that operate
 
 ## Navigation
 
-- ⬅️ **[Market Implementation Overview](./index.md)**  
-  Return to the top-level market implementation documentation.
+- ⬅️ **[Protocol Overview](./README.md)**  
+  Return to the top-level protocol documentation.
 
 - ⬅️ **[Conditions and Outcomes](./conditions-and-outcomes.md)**  
   How governance decisions are represented and resolved.

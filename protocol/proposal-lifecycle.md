@@ -170,8 +170,8 @@ This is an operational choice, not a protocol requirement.
 Dedicated contracts for managing futarchy liquidity are planned to simplify and automate this process in the future. These contracts are not required for futarchy to function and are documented separately.
 
 See:
-- **[Liquidity Pools](./market-implementation/liquidity-pools.md)** for pool mechanics
-- **[Liquidity Management](./market-implementation/liquidity-management.md)** for current practices and future plans
+- **[Liquidity Pools](./liquidity-pools.md)** for pool mechanics
+- **[Liquidity Management](./liquidity-management.md)** for current practices and future plans
 
 ---
 
@@ -469,7 +469,7 @@ Re-running a proposal always creates a **new condition**, even if the proposal t
 
 ## Navigation
 
-- ⬅️ **[Protocol Overview](./README.md)**
-- ⬅️ **[Liquidity Pools](./market-implementation/liquidity-pools.md)**
-- ➡️ **[Using Futarchy in Practice](./using-futarchy-in-practice.md)**  
+- ⬆️ **[Protocol Overview](./README.md)**
+- ⬅️ **[Liquidity Pools](./liquidity-pools.md)**
+- ➡️ **[Using Futarchy in Practice](../using-futarchy-in-practice.md)**  
   Governance norms, thresholds, and design choices.

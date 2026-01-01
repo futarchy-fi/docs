@@ -4,7 +4,7 @@ This page explains how trading works in Futarchy Labs from a trader’s perspect
 
 It focuses on **what positions you can take**, **what assets you are trading**, and **how those positions behave** when a governance decision is made.
 
-For a deeper explanation of the on-chain implementation, see **[Market Implementation](./market-implementation.md)**.
+For a deeper explanation of the on-chain implementation, see the **[Futarchy Protocol](./protocol/README.md)**.
 
 ---
 

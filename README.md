@@ -17,6 +17,12 @@ Prices reflect participants’ beliefs **at the time a decision is made**, rathe
 - [Futarchy Protocol](./protocol/) — on-chain mechanics and conditional token design
 - [Using Futarchy in Practice](./using-futarchy-in-practice.md) — how teams apply the signal in governance
 
+## Guides by Audience
+
+- [DAO Operators](./dao/index.md) — adoption levels, integrations, sponsorships
+- [Traders](./traders/index.md) — onboarding to YES/NO pools
+- [Activists](./activists/index.md) — sponsoring proposals and influencing roadmaps
+
 ## Reference
 
 - [Appendices](./appendices/index.md) — theory, limitations, FAQs
