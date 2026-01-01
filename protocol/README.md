@@ -1,42 +1,24 @@
-# Market Implementation
+# Futarchy Protocol
 
-This section documents how Futarchy Labs markets are implemented on-chain.
+This section documents the **on-chain protocol architecture** used by Futarchy Labs.
 
-It covers the concrete mechanics behind collateral custody, oracle resolution, conditional tokens, and liquidity pools. These pages are intended for readers who want to understand the protocol’s trust assumptions and execution details.
+It describes how futarchy proposals are represented, how conditions are resolved, how conditional assets are created, and how markets are formed and settled. These pages are intended for readers who want to understand the protocol’s mechanics and trust assumptions.
 
-You do not need this level of detail to trade or participate in governance.
+You do not need to read this section to trade or participate in governance, but it is essential for auditors, integrators, and DAO operators.
 
 ---
 
 ## Overview
 
-Futarchy Labs builds on existing, battle-tested infrastructure rather than introducing new custody or oracle mechanisms.
+At a high level, the Futarchy protocol consists of:
 
-At a high level:
+- custody of collateral via the Gnosis Conditional Token Framework (CTF),
+- resolution of governance outcomes via oracles,
+- creation of conditional assets representing counterfactual outcomes,
+- formation of markets over those assets using AMMs,
+- and an explicit lifecycle that ties proposals, markets, and settlement together.
 
-- All collateral is held by the **Gnosis Conditional Token Framework (CTF)**.
-- Governance decisions are represented as **binary conditions** (YES / NO).
-- Conditions are resolved via **reality.eth**, with disputes handled by **Kleros**.
-- Conditional claims are represented internally as **ERC-1155 positions** and exposed to users as **ERC-20 wrapper tokens**.
-- Markets are implemented as **liquidity pools** over these conditional ERC-20 assets.
-
-Each of these components is documented in detail in the pages below.
-
----
-
-## Architecture Components
-
-- **Collateral custody and oracle resolution**  
-  Where funds are held, who is authorized to resolve outcomes, and how disputes are handled.
-
-- **Conditions and outcomes**  
-  How governance decisions are modeled as CTF conditions, including outcome indexing and payout vectors.
-
-- **Conditional assets**  
-  How unconditional assets are split into YES / NO claims, how ERC-1155 positions are wrapped as ERC-20 tokens, and how splitting and merging work.
-
-- **Liquidity pools**  
-  How conditional assets are paired into pools, how trades are executed, and how markets remain conditional until resolution.
+Each of these components is documented in detail below.
 
 ---
 
@@ -48,7 +30,7 @@ Each of these components is documented in detail in the pages below.
   Collateral custody, oracle requirements, Seer integration, reality.eth, and Kleros.
 
 - **[Conditions and Outcomes](./conditions-and-outcomes.md)**  
-  Condition definitions, outcome structure, and resolution semantics.
+  How governance decisions are represented as resolvable conditions.
 
 - **[Conditional Assets](./conditional-assets.md)**  
   ERC-1155 positions, ERC-20 wrappers, splitting, merging, and redemption.
@@ -71,13 +53,14 @@ Each of these components is documented in detail in the pages below.
 ## How to Read This Section
 
 - **Protocol engineers and auditors** should read all pages in order.
-- **Advanced traders and liquidity providers** may want to focus on *Conditional Assets* and *Liquidity Pools*.
-- **Governance designers** may only need *Custody and Oracles* to understand trust boundaries.
+- **Advanced traders and liquidity providers** may focus on Conditional Assets and Liquidity Pools.
+- **DAO operators** may want to read Proposal Lifecycle alongside Custody and Oracles to understand trust boundaries.
 
-For conceptual background and economic intuition, see:
+For conceptual background, see:
 - **[How Futarchy Works](../how-futarchy-works.md)**
+
+For trading behavior, see:
 - **[Trading in Futarchy Markets](../trading-in-futarchy.md)**
 
-For governance usage patterns, see:
+For governance norms and interpretation of signals, see:
 - **[Using Futarchy in Practice](../using-futarchy-in-practice.md)**
-
