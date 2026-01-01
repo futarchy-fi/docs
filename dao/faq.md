@@ -64,7 +64,7 @@ Low participation is a real risk — but futarchy is designed so that the signal
 
 - **Bootstrapping:** Protocol-owned liquidity ensures the market always has depth.  
 - **Arbitrage:** Any participant can use the deployed arbitrage contracts to keep YES and NO aligned with the spot price.  
-- **Signal quality:** If very few trades occur, the result is that YES and NO prices stay close to the spot price — effectively indicating “no measurable impact” from the proposal. That in itself is a valid signal.  
+- **Signal quality:** If very few trades occur, the result is that YES and NO prices stay close to the spot price — effectively indicating “no measurable impact” from the proposal. That in itself is a valid signal. This interpretation is discussed in more detail in the [DAO Operator Guide](./README.md).
 
 **Mitigation:** As more traders join, price differences sharpen. Even with modest participation, futarchy markets can still reveal when a proposal has a clear expected impact.
 
@@ -89,7 +89,7 @@ If the difference between YES and NO is below the **threshold** (default 1%), th
 
 ## What metric are we actually optimizing for? Is it always the token price, or can we use other success measures (TVL, user growth, revenue)? 
 
-Futarchy Labs focuses mainly on the use of **token price** because it’s simple, liquid, and aligned with holder value.  
+Futarchy.FI focuses mainly on the use of **token price** because it’s simple, liquid, and aligned with holder value.  
 But DAOs can also define other metrics (e.g. TVL, active users) or even composite ones, and run futarchy on those instead.
 
 ---
@@ -98,6 +98,8 @@ But DAOs can also define other metrics (e.g. TVL, active users) or even composit
 
 Advisory and veto futarchy implementations currently uses **Reality.eth + Kleros** arbitration.
 Disputes on whether the proposal has been approved can be escalated to Kleros Court.
+
+Importantly, the oracle only attests to which governance outcome occurred, not whether the proposal was good or bad.
 
 Fully decentralized FAOs (Futarchy Autonomous Optimizer) contracts instead use the on-chain Futarchy Oracle.
 The on-chain oracle directly compares YES vs NO TWAPs during the evaluation period and decides whether the proposal will be executed.
