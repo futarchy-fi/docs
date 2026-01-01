@@ -31,7 +31,7 @@ If you are new to futarchy, start with these pages:
 
 ## Using Futarchy in Governance
 
-These sections are most relevant for DAOs and governance operators.
+These sections are most relevant for DAOs and governance operators evaluating or integrating futarchy.
 
 - **[DAO Operator Guides](./dao/index.md)**  
   How DAOs use futarchy in practice, recommended defaults, and governance integration patterns.
