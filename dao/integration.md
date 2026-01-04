@@ -22,7 +22,7 @@ It covers liquidity, oracle setup, thresholds, governance hooks, and pilot timel
 
 Futarchy requires a way to determine which market (YES or NO) should pay out:
 
-- **Default:** **Reality.eth + Kleros arbitration** for disputes on whether a proposal has been approved or rejected.
+- **Default:** **Reality.eth + Kleros arbitration** to attest to whether the proposal was approved or rejected according to the DAO’s governance process.
 - **FAO mode:** In fully autonomous futarchies, the `Futarchy Oracle` contract compares TWAP(YES) vs TWAP(NO) over the decision window. The oracle result directly triggers execution.
 
 ---
@@ -41,7 +41,7 @@ During the window, prices are continuously tracked, and the oracle computes a **
 
 - **Default:** 1% difference between YES and NO (YES > NO + 1%).  
 - **Critical proposals:** Require higher thresholds (e.g. 5–10%).  
-- **Sponsored futarchy:** Threshold may scale with sponsorship size, ensuring bigger proposals need stronger market support.
+- **Sponsored futarchy:** Threshold may scale with sponsorship size, ensuring bigger proposals need stronger market support. (This scaling is a governance rule defined by the DAO or FAO, not enforced implicitly by the protocol.)
 
 ---
 
@@ -51,7 +51,7 @@ During the window, prices are continuously tracked, and the oracle computes a **
 
 **Multisig custody:**  
 We recommend a **2-of-3 multisig** to hold funds allocated to futarchy markets.  
-- **Signers:** typically 2 DAO representatives + 1 Futarchy Labs (or another trusted technical party).  
+- **Signers:** typically 2 DAO representatives + 1 neutral technical co-signer (e.g. Futarchy.FI operators or another trusted infrastructure provider).
 - **Why 2/3:** lightweight enough for quick operations (creating/redeeming conditional pools), but still secure.  
 
 **Lifecycle:**  
@@ -76,8 +76,8 @@ We recommend a **2-of-3 multisig** to hold funds allocated to futarchy markets.
 DAOs can decide how to use futarchy recommendations:  
 
 - **Advisory (recommended default)** — futarchy evaluation runs on proposals and the results are shown alongside Snapshot/on-chain votes, guiding delegates.  
-- **Veto** — proposals must pass futarchy evaluation (checked via Kleros governance) before advancing to a vote or execution.  
-- **Autonomous (FAO)** — the Futarchy Oracle result triggers automatic execution on-chain.  
+- **Veto** — proposals must pass futarchy evaluation before advancing to a vote or execution, with outcome attested via Reality.eth + Kleros.
+- **Autonomous (FAO)** — the Futarchy Oracle result triggers automatic execution on-chain.
 
 **Important:** The **oracle does not publish thresholds**. It only publishes the binary outcome (YES/NO) or whether a proposal passed the required threshold, via Reality.eth + Kleros. The futarchy evaluation process performs the threshold check.
 
