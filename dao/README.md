@@ -190,9 +190,9 @@ How strongly this signal is weighted alongside other governance considerations i
 
 ## Learn More
 
-- **[DAO FAQ](./faq.md)** — manipulation, noise, liquidity, oracle mechanics  
-- **[Adoption Levels](./adoption-levels.md)** — advisory, sponsored, and autonomous paths  
+- **[Adoption Levels](./adoption-levels.md)** — advisory, sponsored, and autonomous paths
 - **[Integration Guide](./integration.md)** — liquidity, oracles, thresholds, timelines  
+- **[DAO FAQ](./faq.md)** — manipulation, noise, liquidity, oracle mechanics  
 - **[Sponsored Proposals](./sponsorship.md)** — attracting capital and ideas via sponsored futarchy  
 
 ---
