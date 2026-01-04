@@ -33,7 +33,7 @@ If you are new to futarchy, start with these pages:
 
 These sections are most relevant for DAOs and governance operators evaluating or integrating futarchy.
 
-- **[DAO Operator Guides](./dao/index.md)**  
+- **[DAO Operator Guides](./dao/README.md)**  
   How DAOs use futarchy in practice, recommended defaults, and governance integration patterns.
 
   - [Adoption Levels](./dao/adoption-levels.md) — advisory → sponsored → autonomous (FAO)
@@ -49,14 +49,14 @@ These sections are most relevant for DAOs and governance operators evaluating or
 
 ## Guides by Audience
 
-- **[DAO Operators](./dao/index.md)**  
+- **[DAO Operators](./dao/README.md)**  
   Recommended defaults, governance hooks, and operational considerations.
 
-- **[Traders](./traders/index.md)**  
+- **[Traders](./traders/README.md)**  
   Trading mechanics, risks, and arbitrage in YES/NO markets.  
   *(Some sections coming soon.)*
 
-- **[Activist Sponsors](./activists/index.md)**  
+- **[Activist Sponsors](./activists/README.md)**  
   Sponsoring proposals, participating in selection, and influencing roadmaps.  
   *(Expanding alongside Sponsored Futarchy.)*
 
@@ -64,7 +64,7 @@ These sections are most relevant for DAOs and governance operators evaluating or
 
 ## Reference & Background
 
-- **[Appendices](./appendices/index.md)**  
+- **[Appendices](./appendices/README.md)**  
   Glossary, definitions, and supporting material.
 
 ---
