@@ -37,8 +37,8 @@ Sponsored Futarchy lets **activist investors and external contributors** fund pr
 ### Discount & Vesting (DAO‑configured)
 - **Default discount:** **33%** (i.e., **+50%** bonus tokens for the same spend).  
 - By policy:
-  - **25%** of extra tokens → **Sponsor**  
-  - **25%** of extra tokens → **Futarchy Protocol** (protocol reward)  
+  - **45%** of extra tokens → **Sponsor**  
+  - **5%** of extra tokens → **Futarchy Protocol** (protocol reward)  
 - **Vesting:** default **linear 12 months** (DAO can change; can vary per sponsorship program).
 
 ### Slot Selection (cadence & method)
@@ -188,12 +188,12 @@ The DAO should pre-allocate a **pool of tokens** for sponsored sales, held by th
 ## Worked Example (numbers)
 
 - Sponsor commits **$100k sDAI**; **at‑risk 5% = $5k**.  
-- DAO discount is **33%** → sponsor receives **+25% tokens** for the $100k if approved (vesting 12m), with Futarchy Protocol receiving another +25% tokens. 
+- DAO discount is **33%** → sponsor receives **+45% tokens** for the $100k if approved (vesting 12m), with Futarchy Protocol receiving another +5% tokens. 
 - If **selected & passes**: $100k buys discounted tokens; **$5k** refunded (was at‑risk, unused).  
 - If **selected & fails/rejected**: **$5k** spent to subsidize markets; **$95k** refunded.  
 - If **not selected**: sponsor may withdraw or roll to next month (default: full refund).
 
-*Alternative:* If DAO sets **33% discount**, **+50% tokens** are minted relative to full‑price: **25%** of the extra tokens → **Sponsor**; **25%** → **Futarchy Protocol** (both vest 12m).
+*Alternative:* If DAO sets **20% discount**, **+25% tokens** are minted relative to full‑price: **20%** of the extra tokens → **Sponsor**; **5%** → **Futarchy Protocol** (both vest 12m).
 
 ---
 
