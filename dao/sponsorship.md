@@ -76,7 +76,7 @@ Two standard paths after a **positive futarchy evaluation**:
 - Configure program parameters (currency, minimum, discount %, vesting, at‑risk %).
 - Approve overall liquidity and **who** can allocate it (multisig).  
 - Define selection cadence and method (top‑by‑sponsorship; optional weighted lottery).  
-- Choose governance hook (Advisory, Veto/Kleros, or FAO).
+- Choose governance hook (Advisory, Veto/Kleros, or FAO — Futarchy Autonomous Optimizer).
 
 **Sponsor**
 - Post deposit (purchase commitment + at‑risk fraction).  
@@ -126,7 +126,7 @@ Two standard paths after a **positive futarchy evaluation**:
 - **Threshold scaling:** per “Thresholds vs. Sponsorship Size”.
 - **Selection cadence:** **monthly**; **top‑by‑sponsorship** (optionally: weighted lottery).  
 - **Multisig:** **2‑of‑3** (2 DAO reps + 1 technical co‑signer).
-- **Governance hook:** **Advisory** by default; **Veto/Kleros** or **FAO** as the DAO matures.
+- **Governance hook:** **Advisory** by default; **Veto/Kleros** or **FAO (Futarchy Autonomous Optimizer)** as the DAO matures.
 - **Sponsored tokens pool:** pre-set cap held by 2-of-3 multisig; program pauses when depleted.
 
 ---

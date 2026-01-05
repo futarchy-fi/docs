@@ -36,7 +36,7 @@ These sections are most relevant for DAOs and governance operators evaluating or
 - **[DAO Operator Guides](./dao/README.md)**  
   How DAOs use futarchy in practice, recommended defaults, and governance integration patterns.
 
-  - [Adoption Levels](./dao/adoption-levels.md) — advisory → sponsored → autonomous (FAO)
+- [Adoption Levels](./dao/adoption-levels.md) — advisory → sponsored → autonomous (FAO, Futarchy Autonomous Optimizer)
   - [Integration Guide](./dao/integration.md) — liquidity, oracles, thresholds, timelines
   - [DAO FAQ](./dao/faq.md) — manipulation, noise, liquidity, oracles
   - [Sponsored Proposals](./dao/sponsorship.md) — attracting capital and ideas via sponsored futarchy

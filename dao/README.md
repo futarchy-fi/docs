@@ -9,6 +9,24 @@ Operational details (liquidity, oracles, thresholds, timelines) are covered in t
 
 ---
 
+## Documentation Map
+
+### DAO Operator Guides
+
+- **[Adoption Levels](./adoption-levels.md)**  
+  How to phase futarchy adoption from advisory signals to sponsored programs and autonomy.
+
+- **[Integration Guide](./integration.md)**  
+  Practical setup details for liquidity, oracles, thresholds, timelines, and governance hooks.
+
+- **[DAO FAQ](./faq.md)**  
+  Common questions about manipulation, liquidity, thresholds, and operational risk.
+
+- **[Sponsored Proposals](./sponsorship.md)**  
+  How sponsored futarchy programs work, including deposits, discounts, cadence, and safeguards.
+
+---
+
 ## Motivation
 
 Governance decisions are hard.
@@ -169,7 +187,7 @@ Common governance patterns include:
 
 - **Advisory** — futarchy recommendations inform votes and deliberation
 - **Veto-gated** — proposals must pass futarchy to advance
-- **Autonomous (FAO)** — futarchy outcomes trigger execution automatically *(advanced; launching separately)*
+- **Autonomous (FAO, Futarchy Autonomous Optimizer)** — futarchy outcomes trigger execution automatically *(advanced; launching separately)*
 
 Most DAOs begin with **advisory futarchy**, build trust in the signal, and expand from there.
 

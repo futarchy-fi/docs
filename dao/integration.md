@@ -22,8 +22,8 @@ It covers liquidity, oracle setup, thresholds, governance hooks, and pilot timel
 
 Futarchy requires a way to determine which market (YES or NO) should pay out:
 
-- **Default:** **Reality.eth + Kleros arbitration** to attest to whether the proposal was approved or rejected according to the DAO’s governance process.
-- **FAO mode:** In fully autonomous futarchies, the `Futarchy Oracle` contract compares TWAP(YES) vs TWAP(NO) over the decision window. The oracle result directly triggers execution.
+- **Default:** **Reality.eth + Kleros arbitration** to attest to whether the proposal was approved or rejected according to the DAO’s governance process. See [Custody and Oracles](../protocol/custody-and-oracles.md) for the underlying contracts and resolution flow.
+- **FAO mode (Futarchy Autonomous Optimizer):** In fully autonomous futarchies, the `Futarchy Oracle` contract compares TWAP(YES) vs TWAP(NO) over the decision window. The oracle result directly triggers execution. For how this ties into proposal sequencing, see the [Proposal Lifecycle](../protocol/proposal-lifecycle.md).
 
 ---
 
@@ -77,7 +77,7 @@ DAOs can decide how to use futarchy recommendations:
 
 - **Advisory (recommended default)** — futarchy evaluation runs on proposals and the results are shown alongside Snapshot/on-chain votes, guiding delegates.  
 - **Veto** — proposals must pass futarchy evaluation before advancing to a vote or execution, with outcome attested via Reality.eth + Kleros.
-- **Autonomous (FAO)** — the Futarchy Oracle result triggers automatic execution on-chain.
+- **Autonomous (FAO, Futarchy Autonomous Optimizer)** — the Futarchy Oracle result triggers automatic execution on-chain.
 
 **Important:** The **oracle does not publish thresholds**. It only publishes the binary outcome (YES/NO) or whether a proposal passed the required threshold, via Reality.eth + Kleros. The futarchy evaluation process performs the threshold check.
 
