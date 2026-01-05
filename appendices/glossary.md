@@ -9,5 +9,5 @@
 
 ## Navigation
 
-- ⬅️ **[Appendices Home](./index.md)**
-- ⬆️ **[Futarchy Labs Docs](../README.md)**
+- ⬆️ **[Appendices Home](./README.md)**
+- 🔁 **[Futarchy Labs Docs](../README.md)**

@@ -97,8 +97,11 @@ The next section explains how these outcomes are used to construct conditional a
 
 ## Navigation
 
-- ⬅️ **[Protocol Overview](./README.md)**  
+- ⬆️ **[Protocol Overview](./README.md)**  
   Return to the top-level protocol documentation.
+
+- ⬅️ **[Custody and Oracles](./custody-and-oracles.md)**  
+  Where collateral lives and how outcomes are reported.
 
 - ➡️ **[Conditional Assets](./conditional-assets.md)**  
   How unconditional assets are split into YES / NO claims and represented as ERC-20 tokens.

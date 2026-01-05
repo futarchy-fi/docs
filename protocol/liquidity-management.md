@@ -10,5 +10,6 @@ It covers both current operational practices and planned protocol-level mechanis
 
 ## Navigation
 
-- ⬅️ **[Protocol Overview](./README.md)**
-- ⬅️ **[Liquidity Pools](./liquidity-pools.md)**
+- ⬆️ **[Protocol Overview](./README.md)**
+- ⬅️ **[Proposal Lifecycle](./proposal-lifecycle.md)**
+- 🔁 **[Liquidity Pools](./liquidity-pools.md)**

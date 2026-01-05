@@ -126,7 +126,7 @@ Importantly:
 
 ## Navigation
 
-- ⬅️ **[Protocol Overview](./README.md)**  
+- ⬆️ **[Protocol Overview](./README.md)**  
   Return to the top-level protocol documentation.
 
 - ⬅️ **[Conditional Assets](./conditional-assets.md)**  

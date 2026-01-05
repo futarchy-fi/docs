@@ -202,3 +202,11 @@ The DAO should pre-allocate a **pool of tokens** for sponsored sales, held by th
 - **Adoption levels:** see [Adoption Levels](./adoption-levels.md) (Advisory‑first; Sponsored as Level 2).  
 - **How to wire it up:** see [DAO Integration Guide](./integration.md).  
 - **Common concerns:** see [DAO FAQ](./faq.md) (manipulation, liquidity, oracle/Kleros, thresholds).
+
+---
+
+## Navigation
+
+- ⬆️ **[DAO Operator Guide](./README.md)**
+- ⬅️ **[DAO FAQ](./faq.md)**
+- 🔁 **[Using Futarchy in Practice](../using-futarchy-in-practice.md)**

@@ -160,7 +160,7 @@ These contracts reuse Seer’s battle-tested design while adapting it to governa
 
 ## Navigation
 
-- ⬅️ **[Protocol Overview](./README.md)**  
+- ⬆️ **[Protocol Overview](./README.md)**  
   Overview of the Futarchy Labs on-chain protocol architecture.
 
 - ➡️ **[Conditions and Outcomes](./conditions-and-outcomes.md)**  
@@ -168,4 +168,3 @@ These contracts reuse Seer’s battle-tested design while adapting it to governa
 
 - 🔁 **[Proposal Lifecycle](./proposal-lifecycle.md)**  
   How custody and oracle resolution fit into the end-to-end proposal flow.
-

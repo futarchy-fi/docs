@@ -200,5 +200,6 @@ How strongly this signal is weighted alongside other governance considerations i
 ## Navigation
 
 - ⬆️ **[Futarchy.FI Documentation](../README.md)**
-- ➡️ **[Trader Guides](../traders/index.md)**
-- ➡️ **[Activist Sponsors](../activists/index.md)**
+- ➡️ **[Adoption Levels](./adoption-levels.md)**
+- 🔁 **[Trader Guides](../traders/README.md)**
+- 🔁 **[Activist Sponsors](../activists/README.md)**

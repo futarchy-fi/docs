@@ -471,5 +471,6 @@ Re-running a proposal always creates a **new condition**, even if the proposal t
 
 - ⬆️ **[Protocol Overview](./README.md)**
 - ⬅️ **[Liquidity Pools](./liquidity-pools.md)**
-- ➡️ **[Using Futarchy in Practice](../using-futarchy-in-practice.md)**  
+- ➡️ **[Liquidity Management](./liquidity-management.md)**
+- 🔁 **[Using Futarchy in Practice](../using-futarchy-in-practice.md)**  
   Governance norms, thresholds, and design choices.
