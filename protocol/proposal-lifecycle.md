@@ -251,6 +251,8 @@ Futarchy does not replace governance by default.
 
 At the protocol level, futarchy markets produce price signals, but they do not execute decisions or enforce outcomes. How those signals are interpreted is a governance choice made by each DAO.
 
+For how DAOs operationalize these signals, see the **[DAO Integration Guide](../dao/integration.md)** and **[Using Futarchy in Practice](../using-futarchy-in-practice.md)**.
+
 ---
 
 ### Advisory by Default

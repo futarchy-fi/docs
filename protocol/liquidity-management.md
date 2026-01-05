@@ -6,6 +6,8 @@ It covers both current operational practices and planned protocol-level mechanis
 
 > This section is under active development.
 
+For a DAO-operator view of liquidity sourcing, thresholds, and custody patterns, see the **[DAO Integration Guide](../dao/integration.md)** and the **[Sponsored Proposals](../dao/sponsorship.md)** program description.
+
 ---
 
 ## Navigation

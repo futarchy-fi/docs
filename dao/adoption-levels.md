@@ -42,7 +42,7 @@ Milestones provide *extra signals* to validate execution, but are not required t
 
 ---
 
-## Level 2 — Sponsored Futarchy
+## Level 2 — Sponsored Proposals (Sponsored Futarchy)
 
 **What it is:**  
 Outside sponsors (activist investors) propose changes and bond capital.  
@@ -63,7 +63,7 @@ If futarchy approves, sponsors can buy DAO tokens at a discount (vested).
 
 ---
 
-## Level 3 — FAO (Futarchy Autonomous Organization)
+## Level 3 — FAO (Futarchy Autonomous Optimizer)
 
 **What it is:**  
 A special on-chain governor (FAO) directly controls treasury or parameters.  

@@ -75,7 +75,7 @@ Low participation is a real risk — but futarchy is designed so that the signal
 There are three ways DAOs can adopt futarchy:
 1. **Advisory** — futarchy runs in parallel, and results are displayed in Snapshot (informing delegates before they vote).  
 2. **Veto** — proposals must pass futarchy evaluation to move forward to Snapshot or on-chain execution.  
-3. **Autonomous (FAO)** — futarchy oracle automatically triggers execution when YES > NO by threshold.
+3. **Autonomous (FAO, Futarchy Autonomous Optimizer)** — futarchy oracle automatically triggers execution when YES > NO by threshold. See [Adoption Levels](./adoption-levels.md) for how FAO fits into the overall roadmap.
 
 ---
 
@@ -96,7 +96,7 @@ But DAOs can also define other metrics (e.g. TVL, active users) or even composit
 
 ## Who runs the oracle, and can it be trusted?
 
-Advisory and veto futarchy implementations currently uses **Reality.eth + Kleros** arbitration.
+Advisory and veto futarchy implementations currently use **Reality.eth + Kleros** arbitration (see [Custody and Oracles](../protocol/custody-and-oracles.md) for the protocol view).
 Disputes on whether the proposal has been approved can be escalated to Kleros Court.
 
 Importantly, the oracle only attests to which governance outcome occurred, not whether the proposal was good or bad.
