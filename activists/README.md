@@ -8,5 +8,5 @@ This section explains how activist investors can sponsor proposals in futarchy.
 ## Navigation
 
 - ⬆️ **[Futarchy Labs Docs](../README.md)**
-- ➡️ **[DAO Operator Guides](../dao/index.md)**
-- ➡️ **[Trader Onboarding](../traders/index.md)**
+- ➡️ **[Trader Onboarding](../traders/README.md)**
+- 🔁 **[DAO Operator Guides](../dao/README.md)**

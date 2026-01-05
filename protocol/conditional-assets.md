@@ -182,7 +182,7 @@ From this perspective, futarchy can be viewed as a governance layer that operate
 
 ## Navigation
 
-- ⬅️ **[Protocol Overview](./README.md)**  
+- ⬆️ **[Protocol Overview](./README.md)**  
   Return to the top-level protocol documentation.
 
 - ⬅️ **[Conditions and Outcomes](./conditions-and-outcomes.md)**  

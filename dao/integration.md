@@ -81,4 +81,10 @@ DAOs can decide how to use futarchy recommendations:
 
 **Important:** The **oracle does not publish thresholds**. It only publishes the binary outcome (YES/NO) or whether a proposal passed the required threshold, via Reality.eth + Kleros. The futarchy evaluation process performs the threshold check.
 
-👉 Next: Read about [Adoption Levels](./adoption-levels.md) or see [Sponsored Proposals](./sponsorship.md) for capital inflow options.
+---
+
+## Navigation
+
+- ⬆️ **[DAO Operator Guide](./README.md)**
+- ⬅️ **[Adoption Levels](./adoption-levels.md)**
+- ➡️ **[DAO FAQ](./faq.md)**

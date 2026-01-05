@@ -127,3 +127,11 @@ Like any governance system, futarchy has trade-offs. Key risks include:
 - **Short-term orientation.**  
   Markets aggregate the preferences of participating token holders. If too few long-term holders trade, short-term price movements may dominate.  
   *Mitigation:* Begin with **advisory futarchy** to build confidence, and for FAOs adopt mechanisms that slow or limit treasury use (e.g. **DAICO-style** structures where funds are released gradually).
+
+---
+
+## Navigation
+
+- ⬆️ **[DAO Operator Guide](./README.md)**
+- ⬅️ **[Integration Guide](./integration.md)**
+- ➡️ **[Sponsored Proposals](./sponsorship.md)**

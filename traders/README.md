@@ -8,5 +8,5 @@ This section explains how to trade in conditional markets (YES/NO pools).
 ## Navigation
 
 - ⬆️ **[Futarchy Labs Docs](../README.md)**
-- ➡️ **[DAO Operator Guides](../dao/index.md)**
-- ➡️ **[Activist Playbook](../activists/index.md)**
+- ➡️ **[DAO Operator Guides](../dao/README.md)**
+- 🔁 **[Activist Playbook](../activists/README.md)**
