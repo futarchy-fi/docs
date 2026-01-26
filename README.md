@@ -41,10 +41,6 @@ These sections are most relevant for DAOs and governance operators evaluating or
   - [DAO FAQ](./dao/faq.md) — manipulation, noise, liquidity, oracles
   - [Sponsored Proposals](./dao/sponsorship.md) — attracting capital and ideas via sponsored futarchy
 
-- **[Using Futarchy in Practice](./using-futarchy-in-practice.md)**  
-  How to interpret futarchy signals, handle close calls, and apply market outputs in real governance.
-  *(Work in progress)*
-
 ---
 
 ## Guides by Audience
