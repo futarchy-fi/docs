@@ -27,8 +27,8 @@ If you are new to futarchy, start with these pages:
 - **[Futarchy Protocol](./protocol/README.md)**  
   On-chain architecture: conditions, conditional assets, liquidity pools, oracles, and settlement.
 
-- **[Deployments & Addresses](./deployments-and-addresses.md)**
-  contract addresses, versions, explorers, subgraphs, and RPC assumptions.
+- **[Deployments & Addresses](./deployments-and-addresses.md)**  
+  Contract addresses, versions, explorers, subgraphs, and RPC assumptions.
 
 ---
 
