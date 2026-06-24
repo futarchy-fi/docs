@@ -1,86 +1,16 @@
-# Futarchy.FI Documentation
+# Futarchy Labs Docs
 
-Welcome to the Futarchy.FI documentation.
+This repository builds the public documentation site for Futarchy Labs:
 
-Futarchy.FI is a **governance protocol** that uses **conditional token markets** to evaluate governance decisions.
+<https://docs.futarchy.fi>
 
-Instead of voting directly on proposals without feedback, participants trade on **counterfactual versions of a project’s token**:
-- one conditional on the proposal being approved (YES),
-- one conditional on the proposal being rejected (NO).
+The source pages live in `content/`. Build locally with:
 
-By comparing prices in these two markets **before a decision is made**, Futarchy produces an incentive-aligned signal about which choice is expected to create more value for the project.
+```bash
+python3 -m pip install -r requirements.txt
+python3 -m mkdocs serve
+```
 
-This repository documents the **live Futarchy protocol**, its governance use cases, and recommended operational practices. Some sections also describe features that are launching soon; these are clearly indicated where relevant.
-
----
-
-## Start Here (Core Concepts)
-
-If you are new to futarchy, start with these pages:
-
-- **[How Futarchy Works](./how-futarchy-works.md)**  
-  The core idea: counterfactual markets, conditional assets, and belief aggregation.
-
-- **[Trading in Futarchy Markets](./trading-in-futarchy.md)**  
-  How YES/NO markets work, what traders are actually buying and selling, and how positions resolve.
-
-- **[Futarchy Protocol](./protocol/README.md)**  
-  On-chain architecture: conditions, conditional assets, liquidity pools, oracles, and settlement.
-
-- **[Deployments & Addresses](./deployments-and-addresses.md)**  
-  Contract addresses, versions, explorers, subgraphs, and RPC assumptions.
-
----
-
-## Using Futarchy in Governance
-
-These sections are most relevant for DAOs and governance operators evaluating or integrating futarchy.
-
-- **[DAO Operator Guides](./dao/README.md)**  
-  How DAOs use futarchy in practice, recommended defaults, and governance integration patterns.
-
-- [Adoption Levels](./dao/adoption-levels.md) — advisory → sponsored → autonomous (FAO, Futarchy Autonomous Optimizer)
-  - [Integration Guide](./dao/integration.md) — liquidity, oracles, thresholds, timelines
-  - [DAO FAQ](./dao/faq.md) — manipulation, noise, liquidity, oracles
-  - [Sponsored Proposals](./dao/sponsorship.md) — attracting capital and ideas via sponsored futarchy
-
----
-
-## Guides by Audience
-
-- **[DAO Operators](./dao/README.md)**  
-  Recommended defaults, governance hooks, and operational considerations.
-
-- **[Traders](./traders/README.md)**  
-  Trading mechanics, risks, and arbitrage in YES/NO markets.  
-  *(Some sections coming soon.)*
-
-- **[Activist Sponsors](./activists/README.md)**  
-  Sponsoring proposals, participating in selection, and influencing roadmaps.  
-  *(Expanding alongside Sponsored Futarchy.)*
-
----
-
-## Reference & Background
-
-- **[Deployments & Addresses](./deployments-and-addresses.md)**
-
-- **[Appendices](./appendices/README.md)**  
-  Glossary, definitions, and supporting material.
-
----
-
-## What Futarchy Is — and Is Not
-
-Futarchy is:
-- a way to aggregate **beliefs** using markets,
-- a tool for evaluating governance decisions,
-- a source of **continuous, incentive-aligned signals**.
-
-Futarchy is not:
-- a replacement for governance by default,
-- a prediction market resolved on future outcomes,
-- a guarantee that approved proposals will succeed.
-
-By default, futarchy provides **recommendations**.  
-How those recommendations are used — advisory, veto-based, or autonomous — is a governance choice made by each DAO.
+Internal operational notes, private wiki material, signer details, contacts,
+and secrets-adjacent runbooks do not belong in this public repository. Use
+internal sources only as context for reviewed public writing.

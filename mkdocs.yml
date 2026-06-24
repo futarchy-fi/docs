@@ -1,0 +1,105 @@
+site_name: Futarchy Labs Docs
+site_url: https://docs.futarchy.fi/
+site_description: Markets for better decisions in autonomous systems.
+repo_url: https://github.com/futarchy-fi/docs
+repo_name: futarchy-fi/docs
+edit_uri: edit/main/content/
+docs_dir: content
+site_dir: site
+
+theme:
+  name: material
+  logo: assets/images/futarchy-logo-white.svg
+  favicon: assets/images/futarchy-logo.svg
+  palette:
+    - scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/futarchy-fi
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/_futarchy
+
+nav:
+  - Start:
+      - Overview: README.md
+      - How Futarchy Works: how-futarchy-works.md
+      - Trading in Futarchy: trading-in-futarchy.md
+      - Live Systems and Repos: deployments-and-addresses.md
+      - Follow-up Questions: follow-up-questions.md
+  - Vision:
+      - Overview: vision/README.md
+      - Agent Markets: vision/agent-markets.md
+      - FAO: vision/fao.md
+      - Bayes Market: vision/bayes-market.md
+      - Research Roadmap: vision/research-roadmap.md
+  - Protocol:
+      - Overview: protocol/README.md
+      - Conditional Assets: protocol/conditional-assets.md
+      - Conditions and Outcomes: protocol/conditions-and-outcomes.md
+      - Custody and Oracles: protocol/custody-and-oracles.md
+      - Liquidity Pools: protocol/liquidity-pools.md
+      - Proposal Lifecycle: protocol/proposal-lifecycle.md
+      - Liquidity Management: protocol/liquidity-management.md
+      - Market Implementation: market-implementation.md
+  - Applications:
+      - Overview: use-cases/README.md
+      - DAO Operators: dao/README.md
+      - Adoption Levels: dao/adoption-levels.md
+      - Integration Guide: dao/integration.md
+      - DAO FAQ: dao/faq.md
+      - Sponsored Proposals: dao/sponsorship.md
+      - Traders: traders/README.md
+      - Sponsors: activists/README.md
+  - Runbooks:
+      - Public Market Launch: runbooks/launch-a-market.md
+      - Market Readiness Checklist: runbooks/market-readiness-checklist.md
+  - Funding:
+      - Investors and Grant Makers: funding/README.md
+  - Appendix:
+      - Overview: appendices/README.md
+      - Glossary: appendices/glossary.md
+      - Risks and Guarantees: appendices/risks-and-guarantees.md

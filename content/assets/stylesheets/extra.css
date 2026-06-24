@@ -1,0 +1,130 @@
+:root {
+  --futarchy-blue: #1d4f73;
+  --futarchy-cyan: #4ed4e8;
+  --futarchy-muted: #5c6670;
+}
+
+.md-header,
+.md-tabs {
+  background: #050607;
+}
+
+.md-header__button.md-logo img {
+  height: 1.4rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 2rem;
+  align-items: center;
+  margin: -0.5rem 0 2.5rem;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-kicker {
+  color: var(--futarchy-blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 4.1rem);
+  line-height: 1.02;
+}
+
+.hero-subtitle {
+  color: var(--futarchy-muted);
+  font-size: 1.05rem;
+  max-width: 42rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-visual {
+  border: 1px solid rgba(29, 79, 115, 0.18);
+  background:
+    linear-gradient(135deg, rgba(29, 79, 115, 0.18), rgba(78, 212, 232, 0.08)),
+    #f8fbfc;
+  padding: 1rem;
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.25rem;
+}
+
+.hub-card {
+  border: 1px solid rgba(17, 19, 22, 0.12);
+  border-radius: 6px;
+  padding: 1rem;
+  background: var(--md-default-bg-color);
+}
+
+.hub-card h3 {
+  margin-top: 0;
+}
+
+.hub-card img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.signal-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.signal-item {
+  border-left: 3px solid var(--futarchy-blue);
+  background: rgba(29, 79, 115, 0.06);
+  padding: 0.85rem;
+}
+
+.signal-item strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.md-typeset .md-button {
+  border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .hub-grid,
+  .signal-strip {
+    grid-template-columns: 1fr;
+  }
+}
