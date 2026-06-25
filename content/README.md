@@ -4,9 +4,9 @@
 
 # Markets for better decisions in autonomous systems
 
-Futarchy Labs builds market mechanisms that help systems decide what to do:
-conditional token markets, agent evaluation markets, Bayesian prediction-market
-engines, and on-chain infrastructure for programmable incentives.
+Futarchy Labs builds market infrastructure for autonomous decision-making. We
+turn questions about proposals, agents, and objectives into tradable signals
+that can guide incentives, funding, and on-chain execution.
 
 Today this includes live futarchy markets for governance decisions. The broader
 direction is market-native coordination for autonomous organizations and AI
