@@ -115,8 +115,17 @@ event, the traded positions are often tokenized claims.
 
 ## What the Prices Represent
 
-Because trades are conditional, prices can be interpreted as the market's
-estimate of the chosen objective in each world.
+Because trades are conditional, prices can be interpreted branch by branch:
+
+- the price in the **YES** world reflects what traders think the objective is
+  worth if the action is taken,
+- the price in the **NO** world reflects what traders think the objective is
+  worth if the action is not taken.
+
+The signal comes from comparing those prices. If the YES world is priced higher
+than the NO world, the market is saying the action is expected to improve the
+chosen objective. If the NO world is priced higher, the market is saying the
+action is expected to make things worse.
 
 For example:
 
@@ -132,10 +141,12 @@ For example:
 These prices reflect participants' beliefs, incentives, and information at the
 time the decision is made.
 
-Some futarchy designs require later measurement of the objective. The current
-`futarchy.fi` governance markets are narrower: they compare conditional spot
-markets during the decision window, and do not wait for a future success metric
-to be observed.
+The future still matters: traders are pricing their expectations of future
+consequences into the market today. The important distinction is settlement. In
+the current `futarchy.fi` governance markets, settlement only needs to know which
+branch happened, not whether the proposal eventually turned out to be good. A
+different futarchy design could also include a later measured outcome, but that
+is an additional design choice, not required for the basic decision signal.
 
 ---
 
