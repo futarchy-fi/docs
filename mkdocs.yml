@@ -73,6 +73,7 @@ nav:
   - Vision:
       - Overview: vision/README.md
       - Agent Markets: vision/agent-markets.md
+      - Objectives and Impact Markets: vision/objectives-and-impact.md
       - FAO: vision/fao.md
       - Bayes Market: vision/bayes-market.md
       - Research Roadmap: vision/research-roadmap.md

@@ -62,6 +62,10 @@ autonomy.
 </div>
 </div>
 
+Public-good and grant programs can also use markets to estimate which proposals
+create the most marginal impact for a chosen objective. See
+[Objectives and Impact Markets](vision/objectives-and-impact.md).
+
 ## Core ideas
 
 <div class="signal-strip" markdown>

@@ -1,6 +1,7 @@
 # Glossary
 
-- **Token Futarchy**: Futarchy based on token price impact (our focus).
+- **Token Futarchy**: Futarchy based on token price impact; this is the current
+  live governance-market implementation.
 - **Metric Futarchy**: Futarchy based on external KPIs or metrics.
 - **Conditional Market**: A market that only pays out if a condition is met.
 - **YES/NO Tokens**: Split assets representing outcomes of proposals.

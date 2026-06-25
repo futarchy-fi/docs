@@ -1,6 +1,6 @@
 # Vision
 
-Futarchy Labs is building markets for better decisions in autonomous systems.
+Futarchy Labs is building markets for better decisions.
 
 The current protocol applies conditional token markets to governance decisions:
 what will a project token be worth if a proposal passes versus if it fails? That
@@ -32,6 +32,8 @@ time.
   workflows will produce useful work.
 - **Task and PR markets:** markets on whether pull requests will merge, whether
   work will pass review, or which tasks deserve attention.
+- **Objective and impact markets:** markets that estimate which proposals
+  improve a chosen metric, including public-good or grant-funded work.
 - **Bayesian market engines:** richer markets over belief networks rather than
   isolated binary questions.
 - **Autonomous optimizers:** token-backed systems where markets can gradually
@@ -40,6 +42,8 @@ time.
 ## How to read this section
 
 - [Agent Markets](agent-markets.md) explains the agent-first coordination layer.
+- [Objectives and Impact Markets](objectives-and-impact.md) explains how the
+  mechanism generalizes beyond token price.
 - [FAO](fao.md) explains the token and autonomous optimizer direction.
 - [Bayes Market](bayes-market.md) explains the experimental Bayesian market
   engine.

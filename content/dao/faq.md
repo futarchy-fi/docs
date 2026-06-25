@@ -89,8 +89,13 @@ If the difference between YES and NO is below the **threshold** (default 1%), th
 
 ## What metric are we actually optimizing for? Is it always the token price, or can we use other success measures (TVL, user growth, revenue)? 
 
-Futarchy.FI focuses mainly on the use of **token price** because it’s simple, liquid, and aligned with holder value.  
-But DAOs can also define other metrics (e.g. TVL, active users) or even composite ones, and run futarchy on those instead.
+The current Futarchy.fi governance markets mainly use **token price** because it
+is simple, liquid, and aligned with holder value. That is a starting point, not
+the limit of the mechanism.
+
+DAOs and other organizations can define other metrics, such as TVL, active
+users, revenue, issue-resolution rates, or composite objectives, and run
+futarchy on those instead.
 
 ---
 

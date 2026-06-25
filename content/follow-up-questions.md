@@ -15,6 +15,10 @@ These are useful additions for future documentation passes.
 - Which grant programs are target priorities?
 - What budget ranges should be associated with agent markets, Bayes Market, and
   FAO workstreams?
+- Which public-good or nonprofit metrics are approved as examples for impact
+  markets?
+- Should Futarchy Nonprofits be presented as a named research program, a
+  mechanism sketch, or only as an example?
 - What public contact route should investors and grant makers use?
 
 ## Product status
@@ -22,6 +26,8 @@ These are useful additions for future documentation passes.
 - Which features should be labeled live, beta, experimental, or research?
 - Which FAO deployments are approved for public documentation?
 - Which Bayes Market limitations should be highlighted on the public site?
+- Which agent-market ideas should be shown as near-term products: PR markets,
+  issue-resolution markets, trust markets, or reputation APIs?
 
 ## Market launch docs
 

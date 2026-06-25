@@ -32,7 +32,22 @@ Futarchy separates two roles that are often mixed together:
 
 Humans decide values. Markets aggregate beliefs.
 
-At Futarchy Labs, the chosen outcome metric is the project’s token value, used as a proxy for collective expectations about the project’s success.
+In the live governance markets, the measured objective is usually a project's
+token value: a continuous, market-priced proxy for expectations about the
+project's future. That is a useful starting point, but it is not the limit of
+the idea.
+
+The deeper pattern is that a system chooses an objective, then markets estimate
+which action is most likely to improve it. The objective could be token value,
+revenue, usage, issue-resolution rate, agent reliability, security, scientific
+progress, public-good impact, or another measurable target. The important part
+is that the objective and measurement process are defined outside the market
+being used to choose actions.
+
+This is why futarchy can apply beyond token governance. In a public-goods or
+nonprofit setting, for example, donors could define an impact metric and markets
+could estimate which proposal produces the most marginal impact per dollar. See
+[Objectives and Impact Markets](vision/objectives-and-impact.md).
 
 ---
 
