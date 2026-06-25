@@ -1,6 +1,7 @@
 # How Futarchy Works
 
-This page explains the core idea and mechanism behind Futarchy Labs.
+This page explains the core idea behind futarchy and how Futarchy Labs is
+exploring it.
 
 It is recommended reading before diving into governance usage or trading details.
 
@@ -8,9 +9,12 @@ It is recommended reading before diving into governance usage or trading details
 
 ## The Problem Futarchy Tries to Solve
 
-Governance decisions are hard.
+Important decisions are hard.
 
-Proposals often involve complex, uncertain tradeoffs, and it is difficult to know in advance which actions will actually improve outcomes. Voting aggregates preferences, but it does not aggregate information about consequences very well.
+Proposals often involve complex, uncertain tradeoffs, and it is difficult to know
+in advance which actions will actually improve outcomes. Votes, committees, and
+expert reviews can express preferences, but they do not always aggregate
+information about consequences very well.
 
 Futarchy approaches this problem by asking a different question:
 
@@ -32,17 +36,16 @@ Futarchy separates two roles that are often mixed together:
 
 Humans decide values. Markets aggregate beliefs.
 
-In the live governance markets, the measured objective is usually a project's
-token value: a continuous, market-priced proxy for expectations about the
-project's future. That is a useful starting point, but it is not the limit of
-the idea.
+For a for-profit company, the objective might be share price, enterprise value,
+revenue, or another measure of long-term business success. For a DAO or crypto
+organization, the closest market-priced analogue is often token value. For a
+nonprofit, the objective might be marginal impact per dollar. For an agent team,
+it might be task success, reliability, security, or issue-resolution rate.
 
 The deeper pattern is that a system chooses an objective, then markets estimate
-which action is most likely to improve it. The objective could be token value,
-revenue, usage, issue-resolution rate, agent reliability, security, scientific
-progress, public-good impact, or another measurable target. The important part
-is that the objective and measurement process are defined outside the market
-being used to choose actions.
+which action is most likely to improve it. The important part is that the
+objective and measurement process are defined outside the market being used to
+choose actions.
 
 This is why futarchy can apply beyond token governance. In a public-goods or
 nonprofit setting, for example, donors could define an impact metric and markets
@@ -51,68 +54,116 @@ could estimate which proposal produces the most marginal impact per dollar. See
 
 ---
 
-## Counterfactual Worlds
+## The general pattern
 
-For each proposal, Futarchy Labs considers two possible worlds:
+A futarchic mechanism has five basic parts:
 
-- **YES** — the proposal is approved
-- **NO** — the proposal is not approved
+1. A community, company, protocol, or agent team defines what it wants to
+   improve.
+2. A proposal or action set is put forward.
+3. Markets are opened on the possible worlds created by those actions.
+4. Traders price which world is expected to better achieve the chosen objective.
+5. The system uses the market signal to guide a decision.
 
-Rather than predicting the future, the system allows participants to trade on **counterfactual versions of the project’s token**, conditional on which world occurs.
-
-This creates two markets, one for each world.
+That decision might remain advisory, or it might later control funding,
+execution, treasury routing, task assignment, or other incentives.
 
 ---
 
-## Conditional Token Markets
+## Counterfactual Worlds
+
+For each decision, futarchy compares possible worlds.
+
+In a simple proposal market, the two worlds are:
+
+- **YES** - the proposal is approved
+- **NO** - the proposal is not approved
+
+Other markets could compare product launches, hiring plans, grant proposals,
+agent configurations, model choices, or public-good interventions. The key move
+is the same: price the world if the action happens against the world if it does
+not.
+
+---
+
+## Conditional Markets
 
 When participants trade in these markets, they are not making unconditional bets.
+They are taking positions that only apply in a specific world.
 
-Instead, they are buying or selling **conditional exposure** to the token.
+In the current `futarchy.fi` experiment, this is implemented with conditional
+token markets:
 
 - Trades in the **YES** market only take effect if the proposal is approved.
 - Trades in the **NO** market only take effect if the proposal is not approved.
 
 If the relevant world does not occur, the trade is reverted and funds are returned.
 
-All trading happens in the present. There is no future price measurement.
+In other designs, the conditional asset could be linked to share price, revenue,
+an impact metric, a reliability score, or another objective. The mechanism is
+not tied to tokens; tokens are the first practical implementation surface because
+crypto already has tradable assets, public governance actions, and programmable
+settlement.
 
 ---
 
 ## What the Prices Represent
 
-Because trades are conditional, market prices can be interpreted as:
+Because trades are conditional, prices can be interpreted as the market's
+estimate of the chosen objective in each world.
 
-- The market’s current valuation of the token **if the proposal is approved**
-- The market’s current valuation of the token **if the proposal is not approved**
+For example:
 
-These prices reflect participants’ beliefs, incentives, and information **at the time the decision is made**.
+- In a token-governance market, prices can estimate token value if a proposal is
+  approved versus rejected.
+- In a company setting, markets could estimate share price or another business
+  metric under different decisions.
+- In an agent team, markets could estimate whether a task will pass review,
+  whether a change will reduce regressions, or whether a tool is reliable.
+- In a public-goods setting, markets could estimate marginal impact under each
+  proposed intervention.
 
-They are not predictions that get checked later, and they are not settled based on observed outcomes.
+These prices reflect participants' beliefs, incentives, and information at the
+time the decision is made.
 
-This makes Futarchy Labs fundamentally different from traditional prediction markets.
+Some futarchy designs require later measurement of the objective. The current
+`futarchy.fi` governance markets are narrower: they compare conditional spot
+markets during the decision window, and do not wait for a future success metric
+to be observed.
 
 ---
 
-## The Role of the Oracle
+## The Role of Measurement and Oracles
 
-An oracle is used only to determine **which world occurred**: whether the proposal was approved or not.
+Every futarchy needs a credible measurement layer.
 
-The oracle does not measure outcomes, assess success, or resolve prices.
+In the current `futarchy.fi` governance markets, an oracle is used only to
+determine **which world occurred**: whether the proposal was approved or not. The
+oracle does not decide whether the proposal was good. It only reports the
+decision outcome so conditional trades can be applied or reverted.
 
-Once the proposal outcome is known, conditional trades are either applied or reverted accordingly.
+Other futarchy designs may need an oracle for the objective itself: revenue,
+usage, safety incidents, public-good impact, or another measured outcome. That
+measurement problem is often the hardest part of the design. If the metric is
+easy to manipulate, the market will optimize the wrong thing.
 
 ---
 
 ## Why This Produces a Useful Signal
 
-Futarchy markets allow participants to express beliefs in more than one way.
+Futarchy markets let participants express beliefs with incentives attached.
 
-If you believe approving a proposal will increase value, you can buy the token in the **YES** market.  
-If you believe approving it will decrease value, you can sell the token in the **YES** market.
+If you believe an action improves the objective, you can take a position that
+pays in the world where that action happens. If you believe it makes the
+objective worse, you can take the other side.
 
-Likewise, if you believe rejecting a proposal will increase value, you can buy the token in the **NO** market.  
-If you believe rejecting it will decrease value, you can sell the token in the **NO** market.
+In the current token-market implementation, this means:
+
+- If you believe approving a proposal will increase value, you can buy in the
+  **YES** market.
+- If you believe approving it will decrease value, you can sell in the **YES**
+  market.
+- If you believe rejection is better, you can trade the **NO** market instead.
 
 In all cases, participants are taking positions that only apply if the corresponding world occurs.
 
@@ -122,19 +173,39 @@ Participants are free to take positions in either or both markets; how positions
 
 ---
 
+## Where futarchy.fi Fits
+
+Futarchy is still underexplored. Public implementations are early, and the most
+visible live experiments have been crypto-native because crypto provides
+tradable assets, transparent governance, and programmable settlement.
+
+`futarchy.fi` should be read in that light: it is an experiment in conditional
+governance markets using token value as the current objective proxy. It is a
+working surface for learning about market creation, liquidity, conditional
+assets, oracle boundaries, and trader behavior. It is not the full scope of what
+futarchy can become.
+
+Other crypto-native experiments, such as
+[MetaDAO](https://docs.metadao.fi/governance/overview), show the same broader
+direction: markets can become a decision layer, not only a forecasting venue.
+
+---
+
 ## What Futarchy Is — and Is Not
 
-Futarchy Labs is:
+Futarchy is:
 
-- A way to aggregate beliefs using markets
-- A tool for evaluating governance decisions
-- A source of continuous, incentive-aligned signals
+- A way to aggregate beliefs using markets.
+- A tool for evaluating decisions against a chosen objective.
+- A source of incentive-aligned signals for funding, governance, agent
+  coordination, and execution.
 
-Futarchy Labs is not:
+Futarchy is not:
 
-- A traditional voting system
-- A prediction market with future resolution
-- A guarantee that decisions will succeed
+- A traditional voting system.
+- A guarantee that decisions will succeed.
+- A substitute for choosing good objectives.
+- A reason to automate high-stakes decisions before the signal has earned trust.
 
 How the signal is used — advisory, binding, or otherwise — is up to each project.
 
