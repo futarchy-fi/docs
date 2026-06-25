@@ -2,7 +2,7 @@
 <div class="hero-copy" markdown>
 <div class="hero-kicker">Futarchy Labs</div>
 
-# Markets for better decisions in autonomous systems
+# Markets for better decisions
 
 Futarchy Labs builds market infrastructure for autonomous decision-making. We
 turn questions about proposals, agents, and objectives into tradable signals

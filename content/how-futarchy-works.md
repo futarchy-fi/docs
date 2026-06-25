@@ -16,6 +16,11 @@ Futarchy approaches this problem by asking a different question:
 
 **Instead of asking people how they want to vote, what if we ask them what they think will create value?**
 
+A useful shorthand: a normal prediction market is about betting on **what will
+happen**; futarchy is about betting on **what should happen**, relative to a
+chosen objective. More precisely, traders price which decision they expect to
+better achieve the goal the system has chosen.
+
 ---
 
 ## Values vs. Beliefs
