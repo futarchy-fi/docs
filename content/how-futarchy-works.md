@@ -99,11 +99,17 @@ token markets:
 
 If the relevant world does not occur, the trade is reverted and funds are returned.
 
-In other designs, the conditional asset could be linked to share price, revenue,
-an impact metric, a reliability score, or another objective. The mechanism is
-not tied to tokens; tokens are the first practical implementation surface because
-crypto already has tradable assets, public governance actions, and programmable
-settlement.
+Tokens are useful here as an implementation technology. A conditional claim can
+be represented as a token even when the thing being evaluated is not a
+crypto-native token price. For example, a market could trade tokenized claims on
+a stock price, a revenue stream, an impact metric, a reliability score, or
+another objective.
+
+What changes across designs is the objective being measured and the oracle that
+settles it. The token is the portable accounting object: the thing traders can
+hold, transfer, split, merge, and redeem. This is also how many prediction
+markets work in practice; even when the question is about an election or sports
+event, the traded positions are often tokenized claims.
 
 ---
 
