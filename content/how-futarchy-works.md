@@ -65,8 +65,8 @@ A futarchic mechanism has five basic parts:
 4. Traders price which world is expected to better achieve the chosen objective.
 5. The system uses the market signal to guide a decision.
 
-That decision might remain advisory, or it might later control funding,
-execution, treasury routing, task assignment, or other incentives.
+That decision might remain advisory, or it might control funding, execution,
+treasury routing, task assignment, or other incentives.
 
 ---
 
