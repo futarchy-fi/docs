@@ -105,8 +105,8 @@ Signals can inform decisions first, then become more binding as trust grows.
 - **DAO operators:** [DAO Operator Guide](dao/README.md) and
   [Integration Guide](dao/integration.md).
 - **Traders:** [Trading in Futarchy Markets](trading-in-futarchy.md).
-- **Sponsors, investors, and grant makers:** [Funding and Grants](funding/README.md)
-  and [Sponsored Proposals](dao/sponsorship.md).
+- **Sponsors and external contributors:** [Sponsored Proposals](dao/sponsorship.md)
+  and [Objectives and Impact Markets](vision/objectives-and-impact.md).
 
 ## Current public systems
 

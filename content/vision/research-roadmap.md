@@ -64,11 +64,3 @@ prototype results, or external collaboration.
 - Can market-implied trust scores help registries rank agents, skills, and MCP
   servers?
 - How should Sybil resistance work for agent reputation?
-
-## Funding and collaboration
-
-We are interested in collaborators who can help with mechanism design,
-prediction-market engineering, agent evaluation, formal verification, and
-grant-funded research pilots.
-
-See [Investors and Grant Makers](../funding/README.md).

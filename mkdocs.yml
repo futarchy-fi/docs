@@ -69,7 +69,6 @@ nav:
       - How Futarchy Works: how-futarchy-works.md
       - Trading in Futarchy: trading-in-futarchy.md
       - Live Systems and Repos: deployments-and-addresses.md
-      - Follow-up Questions: follow-up-questions.md
   - Vision:
       - Overview: vision/README.md
       - Agent Markets: vision/agent-markets.md
@@ -98,8 +97,6 @@ nav:
   - Runbooks:
       - Public Market Launch: runbooks/launch-a-market.md
       - Market Readiness Checklist: runbooks/market-readiness-checklist.md
-  - Funding:
-      - Investors and Grant Makers: funding/README.md
   - Appendix:
       - Overview: appendices/README.md
       - Glossary: appendices/glossary.md
